@@ -7,12 +7,24 @@ class Application
 public:
 	void run()
 	{
-		hello();
+		init();
+		mainLoop();
+		cleanup();
 	}
 
 private:
-	void hello()
+	/* Initial game engine instances  */
+	void init()
 	{
-		std::cout << "Pokemon Ragnarok Project" << std::endl;
+	}
+
+	/* Processing game engine instances */
+	void mainLoop()
+	{
+	}
+
+	/* Free memory and clean up game instances */
+	void cleanup()
+	{
 	}
 };
