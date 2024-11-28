@@ -1,10 +1,10 @@
 #include <GLFW/glfw3.h>
 
-/* Desktop Window by GLFW Version 3.4 */
+/* Window Desktop Power by GLFW Version 3.4 */
 class Window
 {
 public:
-	/* Initial desktop window */
+	/* Initial window instance */
 	void init()
 	{
 		glfwInit();
@@ -12,19 +12,19 @@ public:
 		initWindow();
 	}
 
-	/* Desktop window should be opening */
+	/* Check window should be open */
 	bool isRunning()
 	{
 		return !glfwWindowShouldClose(window);
 	}
 
-	/* Processes desktop window all pending events */
+	/* Processes window all pending events */
 	void pollEvent()
 	{
 		glfwPollEvents();
 	}
 
-	/* Terminate and free memory desktop window instance */
+	/* Terminate window instance and free memory */
 	void free()
 	{
 		glfwTerminate();
@@ -33,14 +33,14 @@ public:
 private:
 	GLFWwindow* window;
 
-	/* Configuration desktop window */
+	/* Configurations window instance */
 	void initConfiguation()
 	{
 		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 	}
 
-	/* Create desktop window instance */
+	/* Create a window desktop */
 	void initWindow()
 	{
 		window = glfwCreateWindow(800, 600, "Pokemon Ragnarok", nullptr, nullptr);

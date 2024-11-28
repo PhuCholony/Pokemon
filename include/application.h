@@ -15,25 +15,24 @@ public:
 		cleanup();
 	}
 
-protected:
-	/* Pointer to class window instance */
+private:
+	/* Window Instance */
 	Window* windowPtr;
 
-private:
-	/* Initial game engine instances  */
+	/* Initial game instances  */
 	void init()
 	{
 		// Register your class or library here.
 		Window window{};
 
-		// Initial your instance here.
+		// Initial your instances here.
 		window.init();
 
-		// Pointer your instance here
+		// Pointer your instances here
 		windowPtr = &window;
 	}
 
-	/* Processing game engine instances */
+	/* Processes game instances */
 	void mainLoop()
 	{
 		while (windowPtr->isRunning())
