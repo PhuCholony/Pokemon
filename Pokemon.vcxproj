@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{7ad132b2-eafd-438a-bbb8-0f96da2443f7}</ProjectGuid>
     <RootNamespace>Pokemon</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -71,20 +71,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
-    <IntDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
+    <OutDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
-    <IntDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
+    <OutDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
-    <IntDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
+    <OutDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
-    <IntDir>D:\Pokemon\build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
+    <OutDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(SolutionName) $(Configuration) $(Platform)\$(SolutionName)_DoNotShip\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -93,12 +93,12 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;D:\Pokemon\third_party\glm;D:\Pokemon\third_party\glfw\include;D:\Pokemon\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;$(SolutionDir)third_party\glm;$(SolutionDir)third_party\glfw\include;$(SolutionDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;D:\Pokemon\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -111,14 +111,14 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;D:\Pokemon\third_party\glm;D:\Pokemon\third_party\glfw\include;D:\Pokemon\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;$(SolutionDir)third_party\glm;$(SolutionDir)third_party\glfw\include;$(SolutionDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;D:\Pokemon\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -129,12 +129,12 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;D:\Pokemon\third_party\glm;D:\Pokemon\third_party\glfw\include;D:\Pokemon\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;$(SolutionDir)third_party\glm;$(SolutionDir)third_party\glfw\include;$(SolutionDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;D:\Pokemon\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -147,14 +147,14 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;D:\Pokemon\third_party\glm;D:\Pokemon\third_party\glfw\include;D:\Pokemon\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.296.0\Include;$(SolutionDir)third_party\glm;$(SolutionDir)third_party\glfw\include;$(SolutionDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;D:\Pokemon\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.296.0\Lib;$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
